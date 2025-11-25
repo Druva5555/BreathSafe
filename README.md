@@ -1,4 +1,4 @@
-# AQI City Search Engine (Air Quality Index Finder)
+# BreathSafe (Air Quality Index Finder)
 
 A full-stack application to search Air Quality Index (AQI) by city, using the World Air Quality Index (WAQI) API.
 
