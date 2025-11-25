@@ -114,8 +114,4 @@ page runs on `http://localhost:5173`.
     - 400 if `city` missing
     - 404/502 for provider errors
 
-## Notes
-
-- WAQI API usage is documented in code comments in `services/aqiService.js` and `utils/aqiMapper.js`.
-- AQI category color mapping follows common US EPA breakpoints.
 
