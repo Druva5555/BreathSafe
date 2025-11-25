@@ -4,7 +4,7 @@ A full-stack application to search Air Quality Index (AQI) by city, using the Wo
 
 - Backend: Node.js + Express
 - Frontend: React (Vite) + TailwindCSS
-- Caching: In-memory LRU with TTL, auto cleanup
+- Caching: In-memory LRU with TTL,auto cleanup
 
 ## Folder Structure
 
@@ -73,7 +73,7 @@ AQI City Search Engine (Air Quality Index Finder)/
 
 - In-memory LRU with TTL.
 - Configurable via env vars:
-  - `CACHE_MAX_ENTRIES` (default 200)
+  - `CACHE_MAX_ENTRIES` (default 10)
   - `CACHE_TTL_MS` (default 600000 = 10 minutes)
   - `CACHE_CLEANUP_MS` (default 60000 = 1 minute)
 - Auto cleanup of stale entries.
@@ -102,7 +102,7 @@ Server runs on `http://localhost:4000`.
 2. `npm install`
 3. `npm run dev`
 
-App runs on `http://localhost:5173`.
+page runs on `http://localhost:5173`.
 
 ## API Documentation
 
@@ -118,4 +118,4 @@ App runs on `http://localhost:5173`.
 
 - WAQI API usage is documented in code comments in `services/aqiService.js` and `utils/aqiMapper.js`.
 - AQI category color mapping follows common US EPA breakpoints.
-- For production, consider adding persistent caching (Redis) and rate-limiting.
+
